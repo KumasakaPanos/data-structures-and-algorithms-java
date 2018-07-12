@@ -1,3 +1,5 @@
+package day01_reverse_array.src;
+
 public class ArrayReverse {
     public static void reverseArray(int[] input){
         int currentHigh = input.length-1;
