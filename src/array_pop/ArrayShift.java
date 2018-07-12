@@ -1,4 +1,4 @@
-package day02_array_shift;
+package array_pop;
 
 public class ArrayShift {
     public static int[] array_shift(int[] input){

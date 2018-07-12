@@ -1,4 +1,4 @@
-package day02_array_shift;
+package array_pop;
 
 import static org.junit.jupiter.api.Assertions.*;
 
