@@ -11,8 +11,8 @@ class linkedListTest {
     @Test
     void append() {
         testList.append(3);
-        assertEquals(3, testList.head.content);
-        assertEquals(6, testList.head.next.content);
+        assertEquals(6, testList.head.content);
+        assertEquals(3, testList.head.next.content);
         testList.append(9);
         assertEquals(9, testList.head.next.next.content);
     }

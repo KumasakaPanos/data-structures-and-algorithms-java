@@ -4,12 +4,15 @@ public class linkedList{
 
     public Node head;
 
-    public linkedList(int input){
-        this.head = new Node(input);
-    }
+    public linkedList(int input){this.head = new Node(input);}
 
     public void append(int input){
-        this.head = new Node(input, this.head);
+        Node current = this.head;
+        System.out.println(current.next);
+        while(current.next != null){
+            current = current.next;
+        }
+        current.next = new Node(input);
     }
 
     public void insertBefore(int input, int target){
@@ -31,7 +34,7 @@ public class linkedList{
             if(currentNode.next.content == target){
                 System.out.println("target found.");
                 targetNode = currentNode.next;
-                this.head.next = new Node(input,targetNode);
+                currentNode.next = new Node(input,targetNode);
                 return;
             }
             currentNode=currentNode.next;
