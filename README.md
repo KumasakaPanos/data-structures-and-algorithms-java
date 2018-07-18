@@ -1,8 +1,8 @@
-# Insert and shift middle index of array
-Put an integer into an array
+# Retrieve k-th value
+Go k nodes deep into a linked list and return the contents of that node.
 
 ## Challenge
-Without losing data, insert a given value into the center of an array and expand it.
+Starting from the head, find the kth deep node and return the value found there.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![](images/kth-value.jpg)
