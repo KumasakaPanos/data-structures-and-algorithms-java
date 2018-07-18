@@ -9,16 +9,17 @@ class linkedListTest {
     linkedList testList = new linkedList(4);
 
     @Test
-    void kthFromHead() {
-        assertEquals(testList.kthFromHead(1),4);
+    void kthFromEnd(){
+        assertEquals(4,testList.kthFromEnd(1).content);
     }
+
     @Test
-    void kthFromHead1() {
-        testList.append(5);
-        assertEquals(testList.kthFromHead(2),5);
+    void kthFromEnd1(){testList.append(1)
+        assertEquals(4,testList.kthFromEnd(2).content);
     }
+
     @Test
-    void kthFromHead2() {
-        assertEquals(testList.kthFromHead(2),-1);
+    void kthFromEnd2(){
+        assertEquals(null,testList.kthFromEnd(2).content);
     }
 }
