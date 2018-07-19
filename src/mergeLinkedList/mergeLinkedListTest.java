@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class mergeLinkedListTest {
 
     @org.junit.jupiter.api.Test
-    void mergeLinkedList() {
+    void llMergeTestSameLength() {
         linkedList ll1 = new linkedList(4);
         linkedList ll2 = new linkedList(3);
         ll1.append(2);
@@ -21,7 +21,7 @@ class mergeLinkedListTest {
     }
 
     @org.junit.jupiter.api.Test
-    void mergeLinkedList1() {
+    void llMergeTestDifferentLength() {
         linkedList ll1 = new linkedList(4);
         linkedList ll2 = new linkedList(3);
         ll1.append(2);
@@ -35,7 +35,7 @@ class mergeLinkedListTest {
     }
 
     @org.junit.jupiter.api.Test
-    void mergeLinkedList2() {
+    void llMergeDifferentLength2() {
         linkedList ll1 = new linkedList(4);
         linkedList ll2 = new linkedList(3);
         ll2.append(1);

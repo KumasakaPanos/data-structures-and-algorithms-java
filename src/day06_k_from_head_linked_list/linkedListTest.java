@@ -9,17 +9,17 @@ class linkedListTest {
     linkedList testList = new linkedList(4);
 
     @Test
-    void kthFromEnd(){
+    void testForEndValue(){
         assertEquals(4,testList.kthFromEnd(1).content);
     }
 
     @Test
-    void kthFromEnd1(){testList.append(1)
+    void testForSecondValueFromEnd(){testList.append(1);
         assertEquals(4,testList.kthFromEnd(2).content);
     }
 
     @Test
-    void kthFromEnd2(){
+    void TestForInvalidValue(){
         assertEquals(null,testList.kthFromEnd(2).content);
     }
 }
