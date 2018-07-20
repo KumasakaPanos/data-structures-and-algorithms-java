@@ -1,8 +1,8 @@
-# Retrieve k-th value
-Go k nodes deep into a linked list and return the contents of that node.
+# Check for Loop
+Go through a linked list and if there is a recursive or circular reference return true.
 
 ## Challenge
-Starting from the head, find the kth deep node and return the value found there.
+Detect if you can pass from the later nodes to an earlier one.
 
 ## Solution
-![](images/mergeTwoLists.jpg)
+![](images/check-for-loop.jpg)
