@@ -1,11 +1,14 @@
-# REverse a Linked List
-Take in a linked list and return a list with the same data in the nodes, but linked in opposite order.
+# Implement a Quene with Two Stacks
+Create a fifo data structure
 
 ## Challenge
-Starting with the current node as node 1:
+store all data for the quene in a stack.
 
-Go through the list and place the data in each node into a stack. Then pop out of the stack, placing each into a new
-node and build a linked list.
+when you need to dequene, pop all data from the storage stack into a new stack
+
+take the first piece of data from the new stack and return it
+
+then push everything from the new stack back into the first.
 
 ## Solution
-![](images/reverse-list.jpg)
+![](images/quene-with-two-stacks.jpg)
