@@ -1,6 +1,6 @@
-package day06_k_from_head_linked_list;
+package check_for_loop;
 
-public class linkedList{
+public class linkedList {
 
     public int length;
     public Node head;
@@ -14,32 +14,20 @@ public class linkedList{
         while(current.next != null){
             current = current.next;
         }
-        current.next = new Node(input, this.head);
+        current.next = new Node(input);
         this.length++;
     }
 
-    public int kthFromHead(int target){
-        Node current = this.head;
-        for(int i = 1; i < target; i++){
-            current = current.next;
-            if(current == null){
-                return -1;
+    public boolean checkForLoop(){
+        Node currentNode1 = this.head;
+        Node currentNode2 = this.head;
+        while(currentNode2 != null&&currentNode2.next!=null&&currentNode2.next.next!=null){
+                currentNode1=currentNode1.next;
+                currentNode2=currentNode2.next.next;
+                if(currentNode1 == currentNode2||currentNode2.next == currentNode1){
+                    return true;
+                }
             }
-        }
-        return current.content;
-    }
-
-    public Node kthFromEnd(int target){
-        Node current = this.head;
-        if(target >= this.length){
-            System.out.println("Invalid target.")
-            return null;
-        }
-
-        for(int i = 0; i < this.length-target; i++){
-            current=current.next;
-        }
-
-        return current;
+            return false;
     }
 }

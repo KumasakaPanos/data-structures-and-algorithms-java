@@ -32,7 +32,7 @@ public class linkedList{
     public Node kthFromEnd(int target){
         Node current = this.head;
         if(target >= this.length){
-            System.out.println("Invalid target.")
+            System.out.println("Invalid target.");
             return null;
         }
 
