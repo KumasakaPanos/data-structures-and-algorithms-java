@@ -1,4 +1,4 @@
-package day06_k_from_head_linked_list;
+package check_for_loop;
 
 public class Node {
     public int content;
