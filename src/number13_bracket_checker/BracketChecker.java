@@ -2,7 +2,7 @@ package number13_bracket_checker;
 
 import java.util.Stack;
 
-public class bracketChecker {
+public class BracketChecker {
     public static boolean bracketChecker(String input) {
 
         Stack<Character> charStack = new Stack<>();

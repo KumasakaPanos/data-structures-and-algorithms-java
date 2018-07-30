@@ -1,4 +1,4 @@
-package day03_BinarySearch_Array;
+package number03_BinarySearch_Array;
 
 import org.junit.jupiter.api.Test;
 

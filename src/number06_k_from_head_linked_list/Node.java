@@ -1,4 +1,4 @@
-package day06_k_from_head_linked_list;
+package number06_k_from_head_linked_list;
 
 public class Node {
     public int content;

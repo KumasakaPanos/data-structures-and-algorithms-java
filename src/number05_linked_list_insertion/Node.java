@@ -1,4 +1,4 @@
-package day05_linked_list_insertion;
+package number05_linked_list_insertion;
 
 public class Node {
     public int content;

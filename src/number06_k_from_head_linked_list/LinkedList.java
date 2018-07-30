@@ -1,10 +1,10 @@
-package day06_k_from_head_linked_list;
+package number06_k_from_head_linked_list;
 
-public class linkedList{
+public class LinkedList {
 
     public int length;
     public Node head;
-    public linkedList(int input){
+    public LinkedList(int input){
         this.head = new Node(input);
         this.length = 1;
     }

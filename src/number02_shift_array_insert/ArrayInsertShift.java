@@ -1,4 +1,4 @@
-package day02_shift_array_insert;
+package number02_shift_array_insert;
 
 public class ArrayInsertShift {
     public static int[] ArrayInsert(int[] input, int insert){

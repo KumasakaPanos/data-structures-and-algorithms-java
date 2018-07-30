@@ -1,4 +1,4 @@
-package day01_reverse_array;
+package number01_reverse_array;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ class ArrayReverseTest {
     @Test
     void reverseArray() {
         int[] numbers = {0,1,2,3,4};
-        day01_reverse_array.src.ArrayReverse.reverseArray(numbers);
+        number01_reverse_array.src.ArrayReverse.reverseArray(numbers);
         int[] expectedNumbers = {4,3,2,1,0};
         assertArrayEquals(expectedNumbers,numbers);
     }

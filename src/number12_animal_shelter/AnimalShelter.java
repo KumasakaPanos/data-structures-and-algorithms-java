@@ -1,9 +1,9 @@
 package number12_animal_shelter;
 
-public class animalShelter {
+public class AnimalShelter {
     Stack storage;
     int population;
-    animalShelter(int type){
+    AnimalShelter(int type){
         this.storage=new Stack(type);
         this.population = this.storage.length;
     }
@@ -21,10 +21,10 @@ public class animalShelter {
         }
     }
 
-    public animal adopt(int type){
+    public Animal adopt(int type){
         Stack tempStor = new Stack(this.storage.pop());
-        animal returnVal = null;
-        animal tempAnimal;
+        Animal returnVal = null;
+        Animal tempAnimal;
         Boolean found = false;
         while(this.storage.head!=null){
             tempStor.push(this.storage.pop());
@@ -41,10 +41,10 @@ public class animalShelter {
         }
         return returnVal;
     }
-    public animal adopt(){
+    public Animal adopt(){
         Stack tempStor = new Stack(this.storage.pop());
-        animal returnVal = null;
-        animal tempAnimal;
+        Animal returnVal = null;
+        Animal tempAnimal;
         Boolean found = false;
         while(this.storage.head!=null){
             tempStor.push(this.storage.pop());

@@ -1,4 +1,4 @@
-package array_pop;
+package number08_array_pop;
 
 import static org.junit.jupiter.api.Assertions.*;
 

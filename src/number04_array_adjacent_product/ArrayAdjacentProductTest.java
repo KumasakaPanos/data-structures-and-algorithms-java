@@ -1,4 +1,4 @@
-package day04_array_adjacent_product;
+package number04_array_adjacent_product;
 
 import org.junit.jupiter.api.Test;
 

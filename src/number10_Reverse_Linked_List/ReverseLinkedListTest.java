@@ -4,19 +4,19 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class reverseLinkedListTest {
+class ReverseLinkedListTest {
 
     @Test
     void normalTest() {
-        linkedList list1 = new linkedList(1);
+        LinkedList list1 = new LinkedList(1);
         list1.push(2);
         list1.push(3);
 
-        linkedList list2 = new linkedList(3);
+        LinkedList list2 = new LinkedList(3);
         list2.push(2);
         list2.push(1);
 
-        list1=reverseLinkedList.reverseLinkedList(list1);
+        list1=ReverseLinkedList.reverseLinkedList(list1);
         for(int i = 0; i<list1.length; i++){
             Node currentNode=list1.head;
             Node currentNode1=list2.head;
@@ -29,9 +29,9 @@ class reverseLinkedListTest {
     }
     @Test
     void oneDataTest(){
-        linkedList list1 = new linkedList(2);
-        linkedList list2 = new linkedList(2);
-        list1=reverseLinkedList.reverseLinkedList(list1);
+        LinkedList list1 = new LinkedList(2);
+        LinkedList list2 = new LinkedList(2);
+        list1=ReverseLinkedList.reverseLinkedList(list1);
         for(int i = 0; i<list1.length; i++){
             Node currentNode=list1.head;
             Node currentNode1=list2.head;
@@ -44,6 +44,6 @@ class reverseLinkedListTest {
     }
     @Test
     void nullEntryTest(){
-        assertEquals("No linked list given",reverseLinkedList.reverseLinkedList());
+        assertEquals("No linked list given",ReverseLinkedList.reverseLinkedList());
     }
 }

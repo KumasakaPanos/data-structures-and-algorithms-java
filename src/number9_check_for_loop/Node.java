@@ -1,4 +1,4 @@
-package check_for_loop;
+package number9_check_for_loop;
 
 public class Node {
     public int content;

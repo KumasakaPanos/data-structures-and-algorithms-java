@@ -1,10 +1,10 @@
-package day05_linked_list_insertion;
+package number05_linked_list_insertion;
 
-public class linkedList{
+public class LinkedList {
 
     public Node head;
 
-    public linkedList(int input){this.head = new Node(input);}
+    public LinkedList(int input){this.head = new Node(input);}
 
     public void append(int input){
         Node current = this.head;
