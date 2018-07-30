@@ -1,4 +1,4 @@
-package mergeLinkedList;
+package number7_merge_Linked_List;
 
 public class Node {
     public int content;

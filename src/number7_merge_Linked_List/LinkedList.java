@@ -1,12 +1,12 @@
-package mergeLinkedList;
+package number7_merge_Linked_List;
 
-public class linkedList{
+public class LinkedList {
 
     public Node head;
 
     public int length;
 
-    public linkedList(int input){this.head = new Node(input);
+    public LinkedList(int input){this.head = new Node(input);
     this.length = 1;}
 
     public void append(int input){

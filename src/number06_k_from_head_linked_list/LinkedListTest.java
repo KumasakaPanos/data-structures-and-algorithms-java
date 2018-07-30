@@ -1,12 +1,12 @@
-package day06_k_from_head_linked_list;
+package number06_k_from_head_linked_list;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class linkedListTest {
+class LinkedListTest {
 
-    linkedList testList = new linkedList(4);
+    LinkedList testList = new LinkedList(4);
 
     @Test
     void testForEndValue(){

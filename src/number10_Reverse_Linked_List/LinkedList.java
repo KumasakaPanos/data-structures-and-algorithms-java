@@ -1,9 +1,9 @@
 package number10_Reverse_Linked_List;
 
-public class linkedList {
+public class LinkedList {
     Node head;
     int length;
-    linkedList(int data){
+    LinkedList(int data){
         this.head = new Node(data);
         this.length=1;
     }

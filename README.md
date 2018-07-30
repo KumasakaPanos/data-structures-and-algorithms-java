@@ -7,4 +7,4 @@ Create a stack for each type of bracket we are checking for.
 for loop through the input string, taking the character at each index and checking what it is. If it is any of the opening brackets, push onto the corresponding stack. If it is a closing bracket, pop from the corresponding stack, and if there is nothing on that stack, return false. Once all are checked, return true if the stacks have no additional nodes, or false if they do.
 
 ## Solution
-![](images/bracket-check.jpg)
+![](assets/bracket-check.jpg)

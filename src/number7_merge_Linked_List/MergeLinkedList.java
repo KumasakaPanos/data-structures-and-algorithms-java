@@ -1,10 +1,10 @@
-package mergeLinkedList;
+package number7_merge_Linked_List;
 
-public class mergeLinkedList {
-    public static linkedList mergeLinkedList(linkedList ll1, linkedList ll2){
+public class MergeLinkedList {
+    public static LinkedList mergeLinkedList(LinkedList ll1, LinkedList ll2){
         Node currentNode1 = ll1.head.next;
         Node currentNode2 = ll2.head.next;
-        linkedList ll3 = new linkedList(ll1.head.content);
+        LinkedList ll3 = new LinkedList(ll1.head.content);
         ll3.append(ll2.head.content);
         boolean endsReached = false;
         while(endsReached==false) {

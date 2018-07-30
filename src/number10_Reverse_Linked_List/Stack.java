@@ -1,4 +1,4 @@
-package Reverse_Linked_List;
+package number10_Reverse_Linked_List;
 
 public class Stack {
     Node head;

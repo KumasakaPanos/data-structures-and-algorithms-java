@@ -1,12 +1,12 @@
-package day05_linked_list_insertion;
+package number05_linked_list_insertion;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class linkedListTest {
+class LinkedListTest {
 
-    linkedList testList = new linkedList(6);
+    LinkedList testList = new LinkedList(6);
 
     @Test
     void append() {

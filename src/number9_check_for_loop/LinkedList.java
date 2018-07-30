@@ -1,10 +1,10 @@
 package number9_check_for_loop;
 
-public class linkedList {
+public class LinkedList {
 
     public int length;
     public Node head;
-    public linkedList(int input){
+    public LinkedList(int input){
         this.head = new Node(input);
         this.length = 1;
     }

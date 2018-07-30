@@ -1,4 +1,4 @@
-package day11_quene_with_two_stacks;
+package number11_quene_with_two_stacks;
 
 public class Stack {
     Node head;

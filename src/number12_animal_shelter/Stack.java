@@ -1,29 +1,29 @@
-package animal_shelter;
+package number12_animal_shelter;
 
 public class Stack {
-    animal head;
+    Animal head;
     int length;
     Stack(int type){
-        this.head = new animal(type);
+        this.head = new Animal(type);
         this.length=1;
     }
-    Stack(animal input){
+    Stack(Animal input){
         this.head = input;
         this.length=1;
     }
     public void push(int type){
-        animal newAnimal = new animal(type);
+        Animal newAnimal = new Animal(type);
         this.length++;
         newAnimal.next = this.head;
         this.head= newAnimal;
     }
-    public void push(animal newAnimal){
+    public void push(Animal newAnimal){
         this.length++;
         newAnimal.next = this.head;
         this.head= newAnimal;
     }
-    public animal pop(){
-        animal returnAnimal=this.head;
+    public Animal pop(){
+        Animal returnAnimal=this.head;
         this.head=this.head.next;
         this.length--;
         return returnAnimal;

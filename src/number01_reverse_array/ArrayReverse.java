@@ -1,4 +1,4 @@
-package day01_reverse_array.src;
+package number01_reverse_array.src;
 
 public class ArrayReverse {
     public static void reverseArray(int[] input){
