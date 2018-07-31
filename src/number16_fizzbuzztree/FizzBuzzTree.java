@@ -1,19 +1,18 @@
 public class FizzBuzzTree {
-    public static void fizzBuzzTree(BinaryTree tree){
+    public static String fizzBuzzTree(BinaryTree tree){
         if(tree.root==null){
             System.out.print("No data in tree.");
-            return;
+            return "No data in tree.";
         }
-        String returnStorage = "";
-        fizzBuzzTree(tree.root,returnStorage);
+        return fizzBuzzTree(tree.root);
     }
-    public static void fizzBuzzTree(TreeNode location, String returnStorage){
-        if(location.left!=null){
-            fizzBuzzTree(location.left,returnStorage);
+    public static String fizzBuzzTree(TreeNode location){
+        String returnStorage;
+        if(location==null){
+            return "";
         }
-        if(location.right!=null){
-            fizzBuzzTree(location.right,returnStorage);
-        }
+        returnStorage = fizzBuzzTree(location.left);
+        returnStorage += fizzBuzzTree(location.right);
         if(location.data%3==0){
             System.out.print("Fizz");
             returnStorage+="Fizz";
@@ -23,9 +22,11 @@ public class FizzBuzzTree {
             returnStorage+="Buzz";
         }
         if(returnStorage==""){
+            returnStorage+=location.data;
             System.out.print(location.data);
         }
         System.out.println();
         returnStorage+="\n";
+        return returnStorage;
     }
 }

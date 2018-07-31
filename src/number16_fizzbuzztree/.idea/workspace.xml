@@ -14,8 +14,8 @@
       <file leaf-file-name="FizzBuzzTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FizzBuzzTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="219">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -71,10 +71,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="804" />
-    <option name="width" value="796" />
-    <option name="height" value="864" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="800" />
+    <option name="width" value="804" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -227,7 +227,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1608" height="868" extended-state="6" />
+    <frame x="800" y="0" width="804" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -243,7 +243,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32880434" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11938383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24668436" />
       <window_info id="Learn" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -299,8 +299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzBuzzTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="219">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
