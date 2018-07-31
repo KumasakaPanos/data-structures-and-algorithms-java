@@ -22,6 +22,9 @@ public class FizzBuzzTree {
             System.out.print("Buzz");
             returnStorage+="Buzz";
         }
+        if(returnStorage==""){
+            System.out.print(location.data);
+        }
         System.out.println();
         returnStorage+="\n";
     }
