@@ -1,3 +1,5 @@
+package number16_fizzbuzztree;
+
 public class FizzBuzzTree {
     public static String fizzBuzzTree(BinaryTree tree){
         if(tree.root==null){
