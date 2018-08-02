@@ -1,4 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
+package number16_fizzbuzztree;
+
+import static number16_fizzbuzztree.FizzBuzzTree.fizzBuzzTree;
 
 class FizzBuzzTreeTest {
 
@@ -12,20 +14,20 @@ class FizzBuzzTreeTest {
         testTree.add(7);
         testTree.add(9);
         testTree.add(14);
-        FizzBuzzTree.fizzBuzzTree(testTree);
+        fizzBuzzTree(testTree);
     }
 
     @org.junit.jupiter.api.Test
     void nullTreeTest() {
         BinaryTree testTree = new BinaryTree();
-        FizzBuzzTree.fizzBuzzTree(testTree);
+        fizzBuzzTree(testTree);
     }
 
     @org.junit.jupiter.api.Test
     void oneNodeTree() {
         BinaryTree testTree = new BinaryTree();
         testTree.add(8);
-        FizzBuzzTree.fizzBuzzTree(testTree);
+        fizzBuzzTree(testTree);
     }
 
 }

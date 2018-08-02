@@ -1,4 +1,4 @@
-package number16_fizzbuzztree;
+package number17_breadth_first_traversal;
 
 public class TreeNode {
     int data;

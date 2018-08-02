@@ -1,8 +1,8 @@
+package number_18_treemaxvalue;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Stack;
-
 
 public class BinaryTree {
     public TreeNode root;
@@ -10,18 +10,6 @@ public class BinaryTree {
     private int size=0;
 
     public static void main(String[]args){
-        BinaryTree tree = new BinaryTree();
-        tree.add(7);
-        tree.add(3);
-        tree.add(15);
-        tree.add(4);
-        tree.add(1);
-        tree.add(8);
-        tree.add(20);
-
-        tree.contains(20);
-        tree.min();
-        tree.toString();
     }
 
     BinaryTree(){
@@ -58,6 +46,9 @@ public class BinaryTree {
     }
 
     public String toString(){
+        if(this.root==null){
+            return "";
+        }
         String toReturn = "";
         for(ListIterator<String> iterator = this.inOrder().listIterator(); iterator.hasNext();){
             toReturn+=iterator.next();
@@ -107,11 +98,11 @@ public class BinaryTree {
         return this.storage;
     }
 
-    private void inOrder(TreeNode node){
+    private ArrayList<Integer> inOrder(TreeNode node){
         inOrder(node.left);
         this.storage.add(node.data);
         inOrder(node.right);
-        return;
+        return this.storage;
     }
 
     public List preOrder(){
