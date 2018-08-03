@@ -1,8 +1,9 @@
-package number_18_treemaxvalue;
+package number_19_identical;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Stack;
 
 public class BinaryTree {
     public TreeNode root;
@@ -12,7 +13,9 @@ public class BinaryTree {
     public static void main(String[]args){
     }
 
-    BinaryTree(){    }
+    BinaryTree(){
+
+    }
     BinaryTree(int input){
         this.root = new TreeNode(input);
     }
@@ -71,6 +74,7 @@ public class BinaryTree {
     public boolean contains(int val){
         return contains(val, this.root);
     }
+
     public boolean contains(int val, TreeNode location){
         if(location.right.data==val){
             return true;
@@ -124,5 +128,61 @@ public class BinaryTree {
         postOrder(node.left);
         postOrder(node.right);
         this.storage.add(node.data);
+    }
+
+    public Boolean identical(BinaryTree tree1){
+        Stack<TreeNode> List1 = new Stack<TreeNode>();
+        Stack<TreeNode> List2 = new Stack<TreeNode>();
+
+        if(tree1.root == null||this.root == null){
+
+            if(tree1.root == null && this.root == null){
+                return true;
+            }
+            return false;
+        }
+
+        List1.add(tree1.root);
+        List2.add(this.root);
+
+        while(!List1.isEmpty()||!List2.isEmpty()){
+
+            if(!List1.isEmpty()&&List2.isEmpty()||List1.isEmpty()&&!List2.isEmpty()){
+                return false;
+            }
+
+            TreeNode tempNode1 = List1.pop();
+            TreeNode tempNode2 = List2.pop();
+
+            if(!identicalChecker(tempNode1,tempNode2)){
+                return false;
+            }
+            addChildren(tempNode1,List1);
+            addChildren(tempNode2,List2);
+        }
+
+        return true;
+    }
+
+    private static void addChildren(TreeNode node,Stack<TreeNode> listToSave){
+        if(node.left!=null){listToSave.push(node.left);}
+        if(node.right!=null){listToSave.push(node.right);}
+    }
+
+    private static Boolean identicalChecker(TreeNode node1, TreeNode node2){
+        if(node1.data != node2.data){
+            return false;
+        }
+        if(node1.left != null && node2.left != null) {
+            if (node1.left.data != node2.left.data) {
+                return false;
+            }
+        }
+        if(node1.right != null && node2.right != null) {
+            if (node1.right.data != node2.right.data) {
+                return false;
+            }
+        }
+        return true;
     }
 }
