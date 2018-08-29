@@ -1,11 +1,12 @@
-package src.number36_mergesort;
+package number36_mergesort;
 
 import static org.junit.jupiter.api.Assertions.*;
+import src.number36_mergesort.MergeSort;
 
 class MergeSortTest {
 
     @org.junit.jupiter.api.Test
-    void mergeSort() {
+    void mergeSortTest() {
         int[] arr1 = {5,6,4,2,7,3,1};
         int[] arrSort = {1,2,3,4,5,6,7};
         assertArrayEquals(MergeSort.mergeSort(arr1),arrSort);
