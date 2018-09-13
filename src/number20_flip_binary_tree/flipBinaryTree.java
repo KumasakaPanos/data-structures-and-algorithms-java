@@ -12,7 +12,7 @@ public class flipBinaryTree {
     private int size=0;
 
     public static void main(String[]args){
-        flipBinaryTree tree = new flip();
+        flipBinaryTree tree = new flipBinaryTree();
         tree.add(7);
         tree.add(3);
         tree.add(15);
@@ -25,10 +25,10 @@ public class flipBinaryTree {
         tree.min();
     }
 
-    flip(){
+    flipBinaryTree(){
 
     }
-    flip(int input){
+    void flipBinaryTree(int input){
         this.root = new TreeNode(input);
     }
 
