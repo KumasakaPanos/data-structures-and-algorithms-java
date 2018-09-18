@@ -1,6 +1,6 @@
 package mergeLinkedList;
 
-public class Node {
+public class node {
     public int content;
     public Node next;
     public Node(int input){
